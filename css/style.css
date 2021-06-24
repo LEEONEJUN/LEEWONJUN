@@ -1,0 +1,557 @@
+@import url('https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    color: inherit;
+    text-decoration: none;
+}
+
+.wrapper{
+    max-width: 2800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header{
+    background-color: rgb(255, 221, 1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
+
+header .wrap{
+    width: 1280px;
+    height: 90px;
+    margin: 0 auto;
+    position: relative;
+}
+
+header h1 img{
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 40px;
+}
+
+header .gnb{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 40px;
+    font-family: 'Taviraj', serif;
+    font-size: 20px;
+}
+/*--------------헤더-----------------------*/
+
+.banner{
+    height: 650px;
+    padding-top: 90px;
+    text-indent: -99999px;
+    position: relative;    
+    overflow: hidden;
+}
+
+.banner img{
+    width: 100%;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/*---------------베너---------------------*/
+nav{
+    padding-top: 100px;
+    text-align: center;
+    font-family: 'Taviraj', serif;
+    font-size: 24px;
+    box-shadow: 0px -15px 20px rgba(0,0,0,0.15);/**/
+    position: relative;
+    z-index: 1;
+}
+
+nav .menu-navigation{
+    margin-bottom: 45px;
+    position: relative;
+}
+
+nav .menu-navigation .nav_gnb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+nav .menu-navigation .nav_gnb li{
+    margin: 0 18px;
+}
+
+nav .menu-navigation .nav_gnb li a{
+    display: block;
+    padding: 10px 30px;
+}
+
+nav .menu-navigation .indicator{
+    display: block;
+    border-radius: 100px;
+    background-color: rgb(255, 221, 1);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 190.469px;
+    height: 61.111px;
+}
+
+.nav_track{display: flex;}
+
+.nav_track li{
+    margin: 20px;
+    transition: all 0.4s;
+}
+
+.nav_track li > a{
+    display: block;
+    transition: all 0.4s;
+    position: relative;
+}
+
+.nav_track li:hover a,
+.nav_track li.flip a{
+    transform: rotateY(180deg);
+}
+
+.nav_track li.slick-current{
+    transform: translateY(-20px);
+}
+
+.nav_track li:hover span,
+.nav_track li.flip span{
+    z-index: 1;
+}
+
+.nav_track li > a > img{
+    position: relative;
+    z-index: 1;
+}
+
+.nav_track span{
+    position: absolute;
+    z-index: 0;
+    transition: 0.5s;
+    top: 0;
+    left: 0;
+}
+
+.nav_track span img{
+    /* display: none; */
+    overflow: hidden;
+    transform: rotateY(180deg);
+}
+
+
+/*-----------------트랙-------------------*/
+.sub_banner{
+    margin-top: 100px;
+    display: block;
+    height: 650px;
+    background-color: #f1f1f1;
+    position: relative;
+}
+
+.sub_banner h2{
+    font-size: 500px;
+    color: #fff;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.sub_banner .wrap{
+    width: 1280px;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sub_banner .egg_spin{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.sub_banner .txt{
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    font-size: 120px;
+    font-family: 'Taviraj', serif;
+    opacity: 80%;
+    font-weight: 500;
+}
+
+.sub_banner .txt .high_end{
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.sub_banner .txt .egg{
+    color: rgb(255, 221, 1);
+    font-size: 280px;
+}
+
+.sub_banner .txt .egg span{
+    font-size: 120px;
+    font-family: 'Taviraj', serif;
+    color: #000;
+    margin-left: 40px;
+}
+
+/*---------------서브베너---------------------*/
+
+.story{
+    width: 1280px;
+    height: 680px;
+    
+    margin: 100px auto;
+    position: relative;
+}
+
+.story h3{
+    font-family: 'Taviraj', serif;
+    font-size: 36px;
+}
+.story p{
+    margin: 30px 0 30px;
+    font-family: Noto Sans KR;
+    font-weight: normal;
+    font-size: 24px;
+}
+.story .box_wrap{
+    display: flex;
+}
+
+.story .box_wrap div{
+    width: 386px;
+    height: 386px;
+    /* border: 20px solid #f1f1f1; */
+    background-color: #f1f1f1;
+    padding: 20px;
+    position: relative;
+}
+
+.story .box_wrap div span{
+    display: block;
+    position: absolute;
+    transition: all 0.15s linear;
+    opacity: 0;
+}
+
+.story .box_wrap div .bd1{
+    height: 20px;
+    width: 0;
+    background-color: rgb(255, 221, 1);
+    top: 0; right: 20px;
+}
+.story .box_wrap div .bd2{
+    width: 20px;
+    height: 0;
+    background-color: rgb(255, 221, 1);
+    bottom: 20px; right: 0;
+    transition-delay: 0.15s;
+}
+.story .box_wrap div .bd3{
+    height: 20px;
+    width: 0;
+    background-color: rgb(255, 221, 1);
+    bottom: 0; left: 20px;
+    transition-delay: 0.3s;
+}
+.story .box_wrap div .bd4{
+    width: 20px;
+    height: 0;
+    background-color: rgb(255, 221, 1);
+    top: 20px; left: 0;
+    transition-delay: 0.45s;
+}
+
+.story .box_wrap div:hover .bd1{opacity: 1;width: calc(100% - 20px); right: unset; left: 0}
+.story .box_wrap div:hover .bd2{opacity: 1;height: calc(100% - 20px); bottom: unset; top: 0}
+.story .box_wrap div:hover .bd3{opacity: 1;width: calc(100% - 20px); left: unset; right: 0}
+.story .box_wrap div:hover .bd4{opacity: 1;height: calc(100% - 20px); top: unset; bottom: 0}
+
+.story .box_wrap div img{
+    width: 100%;
+    height: 100%;
+}
+
+.story button{
+    width: 120px;
+    height: 50px;
+    font-size: 24px;
+    border-radius:30px 30px 30px 30px;
+    border: 3px solid #000;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-family: 'Taviraj', serif;
+}
+
+
+/*---------------섹션스토리---------------------*/
+main::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.better{
+    margin: 100px 0 100px;
+    width: 1700px;
+    height: 760px;
+    background-color: rgb(255, 221, 1);
+    position: relative;
+    float: right;
+}
+
+.better h3{
+    font-size: 120px;
+    font-family: 'Taviraj', serif;
+    position: absolute;
+    top: -14%;
+    right: 15%;
+}
+
+.better .img{
+    position: absolute;
+    top: 13%;
+}
+
+.better h3 span{
+    font-weight: lighter;
+}
+
+.better .txt{
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    font-size: 24px;
+    line-height: 35px;
+}
+
+.better .txt h5{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.better .txt .first{
+    margin-bottom: 25px;
+}
+
+.better button{
+    width: 120px;
+    height: 50px;
+    font-size: 24px;
+    border-radius:30px 30px 30px 30px;
+    border: 3px solid #000;
+    background-color: rgb(255, 221, 1);
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    font-family: 'Taviraj', serif;
+}
+
+/*---------------섹션베러---------------------*/
+
+.follow:after{
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.follow{
+    margin: 200px 0 100px;
+    width: 1700px;
+    height: 850px;
+    background-color: rgb(255, 221, 1);
+    position: relative;
+    float: left;
+}
+
+.follow h3{
+    font-size: 120px;
+    font-family: 'Taviraj', serif;
+    position: absolute;
+    top: -12%;
+    left: 20%;
+    
+}
+
+.follow span{
+    font-size: 240px;
+    font-family: 'Taviraj', serif;
+    color: #fff;
+    transform:rotate(270deg);
+    transform-origin:left top;
+    position: absolute;
+    top: 97%;
+    left: -3%;
+    opacity: 85%;
+}
+
+.follow .top{
+    display: flex;
+    position: absolute;
+    right: 330px;
+    top: 10%;
+    font-size: 0;
+    background-color: #fff;
+}
+
+.follow .top div{
+    border: 20px solid #fff;
+}
+
+.follow .bottom{
+    display: flex;
+    position: absolute;
+    right: 180px;
+    top: 55%;
+    font-size: 0;
+    background-color: #fff;
+}
+
+.follow .bottom div{
+    border: 20px solid #fff;
+}
+
+.follow .egg_btn{
+    position: absolute;
+    right: -100px;
+    top: 12%;
+}
+
+
+/*---------------섹션팔로우---------------------*/
+
+footer{
+    color: #f1f1f1;
+    font-weight: lighter;
+}
+
+.f_top{
+    width: 100%;
+    height: 700px;
+    background-color: #1a1a1a;
+}
+
+
+.f_top .wrap{
+    width: 1280px;
+    height: 700px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.f_top h4, .font{
+    font-size: 38px;
+    font-family: Noto Sans KR;
+    font-weight: bold;
+}
+
+.f_top h4, .font:hover{
+    color: #fff;
+}
+.f_top .font:hover{
+    transform: scale(1.1)
+
+}
+
+.f_top .location p{
+    font-size: 24px;
+    line-height: 45px;
+    margin-top: 20px;
+    font-family: Noto Sans KR;
+    font-weight: lighter;
+}
+
+.f_top .font{
+    position: absolute;
+    top: 300px;
+    right: 0;
+}
+
+/*---------------푸터1---------------------*/
+
+.f_btm{
+    width: 100%;
+    height: 700px;
+    background-color: #000;
+    font-family: Noto Sans KR;
+    font-size: 24px;
+    position: relative;
+}
+
+.f_btm .wrap_1, .wrap_2{
+    width: 1280px;
+    height: auto;
+    padding-top: 100px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.f_btm .wrap_1 img:hover{
+    transform: scale(1.1);
+}
+
+.f_btm .sns{
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    height: auto;
+    margin: 0px auto;
+}
+
+.f_btm .wrap_2{
+    width: 1280px;
+    height: auto;
+    background-image: url(../images/footer_line2.png);
+    background-repeat: no-repeat;
+    background-position-y: 110px;
+}
+
+.f_btm .wrap_3{
+    width: 1280px;
+    height: auto;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.f_btm .wrap_3 .box{
+    width: 12%;
+    line-height: 38px;
+}
+
+.f_btm .wrap_3 .f_logo{
+    margin-top: 30px;
+}
+/*---------------푸터2---------------------*/
